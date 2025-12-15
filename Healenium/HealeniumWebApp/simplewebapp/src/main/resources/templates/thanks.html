@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thanks</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 100px; }
+    </style>
+</head>
+<body>
+<h2>Thanks, <span th:text="${username}">User</span>!</h2>
+<a th:href="@{/}">Go Back</a>
+</body>
+</html>

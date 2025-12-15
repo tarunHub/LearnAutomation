@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login Success</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 80px; }
+        .container { padding: 20px; border: 1px solid #ccc; border-radius: 8px; display: inline-block; }
+        h2 { color: green; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Login Successful!</h2>
+    <p>Welcome, <span th:text="${username}">User</span>!</p>
+</div>
+</body>
+</html>

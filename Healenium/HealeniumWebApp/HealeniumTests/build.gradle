@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+}
+
+dependencies {
+
+    implementation 'com.epam.healenium:healenium-web:3.5.6'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.14.0'
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation 'org.testng:testng:7.11.0'
+  //  implementation 'com.google.inject:guice:5.1.0'
+    implementation 'com.sun.mail:jakarta.mail:2.0.1'
+
+}
+
+test {
+    useTestNG{
+        suites 'src/test/resources/testng.xml'
+    }
+}
