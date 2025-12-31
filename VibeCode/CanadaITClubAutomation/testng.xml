@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-current.dtd">
+<suite name="Canada IT Club Automation Test Suite" parallel="false" thread-count="1" verbose="2">
+
+    <!-- Page Load and Navigation Tests -->
+    <test name="Page Load and Navigation Tests">
+        <classes>
+            <class name="com.canadaitclub.tests.PageLoadAndNavigationTests">
+                <methods>
+                    <include name="testPageLoadsSuccessfully"/>
+                    <include name="testNavigationMenuVisible"/>
+                    <include name="testNavigationMenuLinks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Job Header Tests -->
+    <test name="Job Header Section Tests">
+        <classes>
+            <class name="com.canadaitclub.tests.JobHeaderTests">
+                <methods>
+                    <include name="testJobTitleAndMetadata"/>
+                    <include name="testCompanyLogoAndLink"/>
+                    <include name="testJobTypeBadgeDisplay"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Apply Now Button Tests -->
+    <test name="Apply Now Button and CTA Tests">
+        <classes>
+            <class name="com.canadaitclub.tests.ApplyNowButtonTests">
+                <methods>
+                    <include name="testApplyNowButtonVisible"/>
+                    <include name="testApplyNowButtonNavigation"/>
+                    <include name="testBookmarkButtonFunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Job Description Tests -->
+    <test name="Job Description Section Tests">
+        <classes>
+            <class name="com.canadaitclub.tests.JobDescriptionTests">
+                <methods>
+                    <include name="testJobDescriptionStructure"/>
+                    <include name="testKeyDetailsDisplay"/>
+                    <include name="testResponsibilitiesSection"/>
+                    <include name="testToolsAndTechnologiesSection"/>
+                    <include name="testJobDescriptionText"/>
+                    <include name="testLocationInformationDisplay"/>
+                    <include name="testExperienceRequirements"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Related Jobs and Share Tests -->
+    <test name="Related Jobs and Share Tests">
+        <classes>
+            <class name="com.canadaitclub.tests.RelatedJobsAndShareTests">
+                <methods>
+                    <include name="testRelatedJobsSectionHeading"/>
+                    <include name="testRelatedJobCardsDisplay"/>
+                    <include name="testShareSectionDisplay"/>
+                    <include name="testTwitterShareButton"/>
+                    <include name="testLinkedinShareButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Job Overview and Employer Tests -->
+    <test name="Job Overview and Employer Information Tests">
+        <classes>
+            <class name="com.canadaitclub.tests.JobOverviewAndEmployerTests">
+                <methods>
+                    <include name="testJobOverviewSidebarDisplay"/>
+                    <include name="testDatePostedInformation"/>
+                    <include name="testLocationInformationInOverview"/>
+                    <include name="testExpirationDateDisplay"/>
+                    <include name="testWorkLocationTypeDisplay"/>
+                    <include name="testEmployerInformationSection"/>
+                    <include name="testViewCompanyProfileLink"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Responsive and Cross-Browser Tests -->
+    <test name="Responsive Design and Cross-Browser Tests">
+        <classes>
+            <class name="com.canadaitclub.tests.ResponsiveAndCrossBrowserTests">
+                <methods>
+                    <include name="testResponsiveDesignMobile"/>
+                    <include name="testResponsiveDesignTablet"/>
+                    <include name="testChromeCompatibility"/>
+                    <include name="testPageTitleAccuracy"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
