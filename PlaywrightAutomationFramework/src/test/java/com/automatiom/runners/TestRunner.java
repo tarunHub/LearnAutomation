@@ -16,6 +16,10 @@ import org.testng.annotations.DataProvider;
                 "pretty",
                 "html:test-results/reports/cucumber-report.html",
                 "json:test-results/reports/cucumber-report.json",
+
+
+
+                test
         },
         monochrome = true,
         tags = "@login"
