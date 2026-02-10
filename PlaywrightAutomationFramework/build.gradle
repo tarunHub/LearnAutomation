@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+
+    // Playwright
+    implementation 'com.microsoft.playwright:playwright:1.40.0'
+
+    // Cucumber
+    implementation 'io.cucumber:cucumber-java:7.14.0'
+    testImplementation 'io.cucumber:cucumber-testng:7.14.0'
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.9.0'
+}
+
+test {
+    useTestNG()
+}
+
